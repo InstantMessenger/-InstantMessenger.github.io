@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="shortcut icon" href="src/assets/images/logo.png">
+    <title>Instant Messenger</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <nav class="header__nav">
+                <!-- Добавляем кликабельную панель для мобильных -->
+                <div class="mobile-menu-toggle">
+                    Instant Messenger Team
+                </div>
+                
+                <ul class="header__top-menu">
+                    <li class="top-menu__item"><a draggable="false" href="#about-project" class="top-menu__item-link">О проекте</a></li>
+                    <li class="top-menu__item"><a draggable="false" href="#our-team" class="top-menu__item-link">Команда</a></li>
+                    <li class="top-menu__item"><a draggable="false" href="#" class="top-menu__item-link">Хочу вступить</a></li>
+                    <li class="top-menu__item"><a draggable="false" href="#" class="top-menu__item-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__content">
+            <div id="about-project"></div>
+            <h1 id="title">Instant Messenger Team</h1>
+            
+
+            <div class="base-descript-box" id="base-descript-box">
+                <div class="descript-box__first">
+                    <button class="descript-box__button" onclick="changeCard(1)">О мессенджере</button>
+                    <button class="descript-box__button" onclick="changeCard(2)">Система контроля версий</button>
+                    <button class="descript-box__button" onclick="changeCard(3)">Технологии разработки</button>
+                </div>
+
+                <div class="descript-box__second">
+                    <h2 id="box-second__title"></h2>
+                    <div id="box-second__content">
+                        <p id="box-second__text"></p>
+                        <img draggable="false" id="box-second__image" src="#" alt="">
+                    </div>
+                </div>
+
+                <div class="descript-box__third">
+                    <button class="descript-box__button" onclick="changeCard(4)">Надо понимать</button>
+                    <button class="descript-box__button" onclick="changeCard(5)">Что ценим в новичках?</button>
+                    <button class="descript-box__button" onclick="changeCard(6)">Как к нам попасть?</button>
+                </div>
+            </div>
+            <div id="our-team"></div>
+
+            
+            <h2 class="subtitle">НАША КОМАНДА</h2>
+            <div id="gallery">
+
+                <div class="gallery__info-card">
+                    <img draggable="false" src="src/assets/images/workers/Anton.png" alt="" class="worker__img">
+                    <h2 class="worker__name">Антон</h2>
+                    <p class="worker_descript">Тимлид по серверу,<br>Главный backend-developer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
+                </div>
+                <div class="gallery__info-card">
+                    <img draggable="false" src="src/assets/images/workers/Petr.png" alt="" class="worker__img">
+                    <h2 class="worker__name">Пётр</h2>
+                    <p class="worker_descript">Тимлид по интерфейсу,<br>Главный frontend-developer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
+                </div>
+                <div class="gallery__info-card">
+                    <img draggable="false" src="src/assets/images/logo.png" alt="" class="worker__img">
+                    <h2 class="worker__name">Даниил</h2>
+                    <p class="worker_descript">Разработчик БД,<br>Серверный тестировщик <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
+                </div>
+                <div class="gallery__info-card">
+                    <img draggable="false" src="src/assets/images/logo.png" alt="" class="worker__img">
+                    <h2 class="worker__name">Максим</h2>
+                    <p class="worker_descript">Тестировщик интерфейса</p>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </header>
+    
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
