@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="start" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <title>Instant Messenger</title>
 </head>
 <body>
+    <h2 id="sorry_alert"><span style="border-bottom: solid 0.1em #000; padding-bottom: 0.5em; border-radius: 0.2em;">* Приносим извинения! *</span> <br><br> <span style="font-size: 0.8em; color: rgb(27, 27, 27);">Данный сайт еще не адаптирован под мобильные устройства. Пожалуйста, откройте его на компьютере. <br><br> Спасибо за понимание!</span></h2>
     <header class="header">
         <div class="header__top">
             <nav class="header__nav">
@@ -17,19 +18,17 @@
                 </div>
                 
                 <ul class="header__top-menu">
-                    <li class="top-menu__item"><a draggable="false" href="#about-project" class="top-menu__item-link">О проекте</a></li>
+                    <li class="top-menu__item"><a draggable="false" href="#start" class="top-menu__item-link">О проекте</a></li>
                     <li class="top-menu__item"><a draggable="false" href="#our-team" class="top-menu__item-link">Команда</a></li>
-                    <li class="top-menu__item"><a draggable="false" href="#" class="top-menu__item-link">Хочу вступить</a></li>
-                    <li class="top-menu__item"><a draggable="false" href="#" class="top-menu__item-link">Контакты</a></li>
+                    <li class="top-menu__item"><a draggable="false" href="#about_membership" class="top-menu__item-link">Хочу вступить</a></li>
+                    <li class="top-menu__item"><a draggable="false" href="contacts.html" class="top-menu__item-link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
-
+        
         <div class="header__content">
-            <div id="about-project"></div>
-            <h1 id="title">Instant Messenger Team</h1>
+            <h1 id="title"></h1>            
             
-
             <div class="base-descript-box" id="base-descript-box">
                 <div class="descript-box__first">
                     <button class="descript-box__button" onclick="changeCard(1)">О мессенджере</button>
@@ -60,27 +59,39 @@
                 <div class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/workers/Anton.png" alt="" class="worker__img">
                     <h2 class="worker__name">Антон</h2>
-                    <p class="worker_descript">Тимлид по серверу,<br>Главный backend-developer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
+                    <p class="worker_descript">Server Tech Lead,<br>System Designer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
                 </div>
                 <div class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/workers/Petr.png" alt="" class="worker__img">
                     <h2 class="worker__name">Пётр</h2>
-                    <p class="worker_descript">Тимлид по интерфейсу,<br>Главный frontend-developer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
+                    <p class="worker_descript">Client Tech Lead,<br>UX/UI Designer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
                 </div>
                 <div class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/logo.png" alt="" class="worker__img">
                     <h2 class="worker__name">Даниил</h2>
-                    <p class="worker_descript">Разработчик БД,<br>Серверный тестировщик <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
+                    <p class="worker_descript">DataBase Developer,<br>Server Tester <sapn class="reds">*</sapn> <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
                 </div>
                 <div class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/logo.png" alt="" class="worker__img">
                     <h2 class="worker__name">Максим</h2>
-                    <p class="worker_descript">Тестировщик интерфейса</p>
-                </div>
-                
-                
+                    <p class="worker_descript">UI Tester</p>
+                </div>    
             </div>
             
+            <div id="about_membership"></div>
+            <h2 class="subtitle">ВСЁ О ВСТУПЛЕНИИ</h2>
+            <div id="membership">
+                <div class="step step-1">
+                    <h2>1. Ознакомиться с главными <a class="step-link" href="#start">принципами</a> проекта</h2>
+                </div>
+                <div class="step step-2">
+                    <h2>2. Подать заявку на вступление <a href="https://forms.gle/ffaHNRQom2ghQ8dz7" target="_blank" class="step-link bs">здесь</a></h2>
+                </div>
+                <div class="step step-3">
+                    <h2>3. Ожидать ответа максимум 3 рабочих дня</h2>
+                </div>
+            </div>
+
         </div>
     </header>
     
