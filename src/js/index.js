@@ -40,7 +40,7 @@ const CARDS = [
     {
         id: 1,
         title: "О МЕССЕНДЖЕРЕ",
-        descript: `Мессенджер <span class="b">INSTANT</span> создается на Python PySide6 и QML Qt.Quick. Это <span class="reds">некоммерческий</span> проект без цели заработка - мы развиваем его ради саморазвития и получения собственного опыта ;)`,
+        descript: `Мессенджер <span class="b">INSTANT</span> создается на Python PySide6 и QML QtQuick. Это <span class="reds">некоммерческий</span> проект без цели заработка - мы развиваем его ради саморазвития и получения собственного опыта ;)`,
         src: "src/assets/images/logo.png",
         alt: "image 1",
     },
