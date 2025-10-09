@@ -1,7 +1,7 @@
 :root { 
-    --main-color: #6690eaff;
+    --main-color: #667eeaff;
     /* --hov-main-color: #000;  */
-    --bg-color: #bed2f0; 
+    --bg-color: #bcc6f1; 
 }
 
 @font-face {
@@ -298,7 +298,8 @@ h2 {
     margin: 1em 3em;
     aspect-ratio: 1/1;
     height: 20em;
-    clip-path: circle(10em);
+    border: solid 0.2em #6889d1;
+    border-radius: 10em;
     padding: 1em;
 }
 .step h2 {
