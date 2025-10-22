@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/aos.css">
     <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/new_styles.css">
     <link rel="shortcut icon" href="src/assets/images/logo.png">
     <title>Instant Messenger</title>
 </head>
-<body>
+<body class="glass-scroll">
+    <div class="animated-gradient"></div>
     <h2 id="sorry_alert"><span style="border-bottom: solid 0.1em #000; padding-bottom: 0.5em; border-radius: 0.2em;">* Приносим извинения! *</span> <br><br> <span style="font-size: 0.8em; color: rgb(27, 27, 27);">Данный сайт еще не адаптирован под мобильные устройства. Пожалуйста, откройте его на компьютере. <br><br> Спасибо за понимание!</span></h2>
     <header class="header">
         <div class="header__top">
@@ -27,9 +30,56 @@
         </div>
         
         <div class="header__content">
-            <h1 id="title"></h1>
+            <h1 id="title" class="c"></h1>
             
-            <div class="base-descript-box" id="base-descript-box">
+            <div class="new_info-content">
+                <div data-aos-duration="1000" data-aos="fade-right" class="new_info-box">
+                    <div class="text-info-box left">
+                        <h2 class="info-title">О МЕССЕНДЖЕРЕ</h2>
+                        <p class="info-descript">Мессенджер <span class="b">INSTANT</span> создается на Python PySide6 и QML QtQuick. Это <span class="reds">некоммерческий</span> проект - мы развиваем его ради саморазвития и получения собственного опыта ;)</p>
+                    </div>
+                    <!-- <img draggable="false" class="info-image" src="src/assets/images/logo_git.png" alt="git"> -->
+                </div>
+
+                <div data-aos-duration="1000" data-aos="fade-left" class="new_info-box">
+                    <div class="text-info-box right">
+                        <h2 class="info-title">СИСТЕМА КОНТРОЛЯ ВЕРСИЙ</h2>
+                        <p class="info-descript">Мы используем <a target="_blank" href="https://git-scm.com/" class="box-second__link">Git</a> в связке с <a target="_blank" href="https://github.com/" class="box-second__link">GitHub</a> для эффективной командной работы. Это позволяет нам делиться изменениями, параллельно работать над разными задачами и сохранять всю историю разработки проекта в одном месте</p>
+                    </div>
+                </div>
+
+                <div data-aos-duration="1000" data-aos="fade-right" class="new_info-box">
+                    <div class="text-info-box left">
+                        <h2 class="info-title">ТЕХНОЛОГИИ РАЗРАБОТКИ</h2>
+                        <p class="info-descript">Для интерфейса используем <span class="b">QML</span> (Qt Meta Language) и <span class="b">JavaScript</span>. Такой стек обеспечивает нам кроссплатфорaменность и удобство разработки. Серверную часть пишем на Python с <span class="b">FastAPI</span> + <span class="b">Websocket</span></p>
+                    </div>
+                </div>
+
+                <div data-aos-duration="1000" data-aos="fade-left" class="new_info-box">
+                    <div class="text-info-box right">
+                        <h2 class="info-title">НАДО ПОНИМАТЬ</h2>
+                        <p class="info-descript"><span class="b">Мы не платим ЗП нашим сотрудникам.</span> Участники команды получают бесценный опыт реальной разработки в команде и возможность работать над интересным проектом. <br><span class="reds">Если ваша цель - деньги, вы нам не подходите!</span></p>
+                    </div>
+                </div>
+
+                <div data-aos-duration="1000" data-aos="fade-right" class="new_info-box">
+                    <div class="text-info-box left">
+                        <h2 class="info-title">ЧТО ЦЕНИМ В НОВИЧКАХ</h2>
+                        <p class="info-descript"><span class="reds">Hard skills</span> не так важны - главное готовность работать в команде, прислушиваться к старшим разработчикам и ответственно выполнять задачи. Мы ценим <span class="b">мотивацию</span> и <span class="b">готовность учиться</span> выше формальных знаний и опыта работы</p>
+                    </div>
+                </div>
+
+                <div data-aos-duration="1000" data-aos="fade-left" class="new_info-box">
+                    <div class="text-info-box right">
+                        <h2 class="info-title">КАК К НАМ ПОПАСТЬ</h2>
+                        <p class="info-descript">Нужно подать заявку <a href="#about_membership" class="box-second__link">здесь</a>, мы свяжемся с вами в течение трех рабочих дней!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <!-- <div class="base-descript-box" id="base-descript-box">
                 <div class="descript-box__first">
                     <button class="descript-box__button" onclick="changeCard(1)">О мессенджере</button>
                     <button class="descript-box__button" onclick="changeCard(2)">Система контроля версий</button>
@@ -49,34 +99,34 @@
                     <button class="descript-box__button" onclick="changeCard(5)">Что ценим в новичках?</button>
                     <button class="descript-box__button" onclick="changeCard(6)">Как к нам попасть?</button>
                 </div>
-            </div>
-            <div id="our-team"></div>
+            </div> -->
 
+            <div id="our-team"></div>
             
-            <h2 class="subtitle">НАША КОМАНДА</h2>
+            <h2 class="subtitle c" data-aos="zoom-in">НАША КОМАНДА</h2>
             <div id="gallery">
 
-                <div class="gallery__info-card">
+                <div data-aos="zoom-in-right" data-aos-duration="500" class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/workers/Anton.png" alt="" class="worker__img">
                     <h2 class="worker__name">Антон</h2>
                     <p class="worker_descript">Server Tech Lead,<br>System Designer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
                 </div>
-                <div class="gallery__info-card">
+                <div data-aos="zoom-in-left" data-aos-duration="500" class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/workers/Petr.png" alt="" class="worker__img">
                     <h2 class="worker__name">Пётр</h2>
                     <p class="worker_descript">Client Tech Lead,<br>UX/UI Designer <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
                 </div>
-                <div class="gallery__info-card">
+                <div data-aos="zoom-in-right" data-aos-duration="500" class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/workers/dania.png" alt="" class="worker__img">
                     <h2 class="worker__name">Даниил</h2>
                     <p class="worker_descript">Executive Director,<br>Server Tester <sapn class="reds">*</sapn> <br><span class="reds">ОСНОВАТЕЛЬ</span></p>
                 </div>
-                <div class="gallery__info-card">
+                <div data-aos="zoom-in-left" data-aos-duration="500" class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/workers/max.png" alt="" class="worker__img">
                     <h2 class="worker__name">Максим</h2>
                     <p class="worker_descript">UI Tester</p>
                 </div>    
-                <div class="gallery__info-card">
+                <div data-aos="zoom-in-right" data-aos-duration="500" class="gallery__info-card">
                     <img draggable="false" src="src/assets/images/logo.png" alt="" class="worker__img">
                     <h2 class="worker__name">Иван</h2>
                     <p class="worker_descript">UI Tester</p>
@@ -84,15 +134,15 @@
             </div>
             
             <div id="about_membership"></div>
-            <h2 class="subtitle">ВСЁ О ВСТУПЛЕНИИ</h2>
+            <h2 class="subtitle c">ВСЁ О ВСТУПЛЕНИИ</h2>
             <div id="membership">
-                <div class="step step-1">
+                <div data-aos="flip-left" class="step step-1">
                     <h2>1. Ознакомиться с главными <a class="step-link bs" href="#start">принципами</a> проекта</h2>
                 </div>
-                <div class="step step-2">
+                <div data-aos="flip-left" class="step step-2">
                     <h2>2. Подать заявку на вступление <a href="https://forms.gle/ffaHNRQom2ghQ8dz7" target="_blank" class="step-link bs">здесь</a></h2>
                 </div>
-                <div class="step step-3">
+                <div data-aos="flip-left" class="step step-3">
                     <h2>3. Ожидать ответа максимум 3 рабочих дня</h2>
                 </div>
             </div>
@@ -100,7 +150,11 @@
         </div>
     </header>
     
-
     <script src="src/js/index.js"></script>
+    <script src="src/js/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
