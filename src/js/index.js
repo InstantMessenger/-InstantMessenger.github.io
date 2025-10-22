@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    changeCard(1);
+    // changeCard(1);
 });
 
 
